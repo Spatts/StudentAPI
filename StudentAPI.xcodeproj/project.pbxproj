@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		513E86A31D4A6A2D00AC845A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513E86A21D4A6A2D00AC845A /* AppDelegate.swift */; };
-		513E86A51D4A6A2D00AC845A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513E86A41D4A6A2D00AC845A /* ViewController.swift */; };
 		513E86A81D4A6A2D00AC845A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 513E86A61D4A6A2D00AC845A /* Main.storyboard */; };
 		513E86AA1D4A6A2D00AC845A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 513E86A91D4A6A2D00AC845A /* Assets.xcassets */; };
 		513E86AD1D4A6A2D00AC845A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 513E86AB1D4A6A2D00AC845A /* LaunchScreen.storyboard */; };
+		513E86B81D4A71DF00AC845A /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513E86B71D4A71DF00AC845A /* SurveyViewController.swift */; };
+		513E86BA1D4A724E00AC845A /* ResponseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513E86B91D4A724E00AC845A /* ResponseTableViewController.swift */; };
+		513E86BC1D4A746200AC845A /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513E86BB1D4A746200AC845A /* NetworkController.swift */; };
+		513E86BE1D4A748400AC845A /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513E86BD1D4A748400AC845A /* Survey.swift */; };
+		513E86C01D4A77F900AC845A /* SurveyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513E86BF1D4A77F900AC845A /* SurveyController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		513E869F1D4A6A2D00AC845A /* StudentAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		513E86A21D4A6A2D00AC845A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		513E86A41D4A6A2D00AC845A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		513E86A71D4A6A2D00AC845A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		513E86A91D4A6A2D00AC845A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		513E86AC1D4A6A2D00AC845A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		513E86AE1D4A6A2D00AC845A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		513E86B71D4A71DF00AC845A /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
+		513E86B91D4A724E00AC845A /* ResponseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseTableViewController.swift; sourceTree = "<group>"; };
+		513E86BB1D4A746200AC845A /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		513E86BD1D4A748400AC845A /* Survey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
+		513E86BF1D4A77F900AC845A /* SurveyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +63,41 @@
 			isa = PBXGroup;
 			children = (
 				513E86A21D4A6A2D00AC845A /* AppDelegate.swift */,
-				513E86A41D4A6A2D00AC845A /* ViewController.swift */,
 				513E86A61D4A6A2D00AC845A /* Main.storyboard */,
+				513E86B61D4A6A5B00AC845A /* View */,
+				513E86B51D4A6A5400AC845A /* Controller */,
+				513E86B41D4A6A3A00AC845A /* Model */,
 				513E86A91D4A6A2D00AC845A /* Assets.xcassets */,
 				513E86AB1D4A6A2D00AC845A /* LaunchScreen.storyboard */,
 				513E86AE1D4A6A2D00AC845A /* Info.plist */,
 			);
 			path = StudentAPI;
+			sourceTree = "<group>";
+		};
+		513E86B41D4A6A3A00AC845A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				513E86BD1D4A748400AC845A /* Survey.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		513E86B51D4A6A5400AC845A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				513E86BB1D4A746200AC845A /* NetworkController.swift */,
+				513E86BF1D4A77F900AC845A /* SurveyController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		513E86B61D4A6A5B00AC845A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				513E86B71D4A71DF00AC845A /* SurveyViewController.swift */,
+				513E86B91D4A724E00AC845A /* ResponseTableViewController.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				513E86A51D4A6A2D00AC845A /* ViewController.swift in Sources */,
+				513E86BC1D4A746200AC845A /* NetworkController.swift in Sources */,
+				513E86B81D4A71DF00AC845A /* SurveyViewController.swift in Sources */,
+				513E86BE1D4A748400AC845A /* Survey.swift in Sources */,
+				513E86C01D4A77F900AC845A /* SurveyController.swift in Sources */,
+				513E86BA1D4A724E00AC845A /* ResponseTableViewController.swift in Sources */,
 				513E86A31D4A6A2D00AC845A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
